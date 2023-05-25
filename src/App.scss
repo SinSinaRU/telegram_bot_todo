@@ -1,0 +1,52 @@
+
+.App {
+  background-color: var(--tg-theme-secondary-bg-color);
+  min-height: 100vh;
+  text-align: center;
+  font-size: calc(10px + 2vmin);
+  color: var(--tg-theme-text-color);
+}
+
+.task {
+  background-color: var(--tg-theme-bg-color);
+  padding: 10px 100px 10px 15px;
+  text-align: left;
+  position: relative;
+  border-radius: 8px;
+
+  &__text {
+    word-wrap: break-word;
+  }
+
+  &__done &__text {
+    text-decoration: line-through;
+    opacity: 0.3;
+    flex: 1;
+  }
+
+  &__icons-wrapper {
+    position: absolute;
+    width: auto;
+    right: 10px;
+    display: inline-block;
+  }
+
+  &__icon {
+    margin: 0px 5px;
+  }
+
+  &__icon:hover {
+    color: var(--tg-theme-secondary-bg-color);
+    cursor: pointer;
+  }
+}
+
+
+.form {
+  background: var(--tg-theme-secondary-bg-color);
+  position: sticky;
+  width: 100%;
+  height: auto;
+  z-index: 10;
+  top: 0;
+}
